@@ -1,10 +1,23 @@
 import Api from '@/service/Api'
 
 export default{
-    fetchPosts() {
-        return Api().get('akun')
+    fetchUser() {
+        return Api().get('api/user')
     },
-    addPost (params) {
-        return Api().post('akun',params)
-    }
+    addUser (params) {
+        return Api().post('api/user/',params)
+    },
+    updateUser (params) {
+        return Api().put('api/user/' + params.id, params)
+      },
+    
+      getUser (params) {
+        return Api().get('api/user/' + params.id)
+      },
+      deleteUser (id) {
+        return Api().delete('api/user/' + id)
+      },
+      loginUser (params) {
+          return Api().post('api/user/login/' , params)
+      }
 }
