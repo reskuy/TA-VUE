@@ -17,5 +17,3 @@
   - Buka 2 Command Line Satu Untuk Client dan satu lagi untuk server, di path awal jalankan ``npm run serve`` di path server jalankan ``npm start``
   - Buka ``localhost:8080``(Default) untuk client dan  ``localhost:5000/`` untuk api , path ``localhost:5000/akun`` akan menampilkan semua akun user yg terdaftar
   
-  **Pertanyaan/Preview ?**
-  - Di DM aja
